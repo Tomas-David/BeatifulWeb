@@ -1,0 +1,88 @@
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    
+}
+
+@keyframes move {
+    0% {
+        transform: rotate(0deg);
+        top: 0;
+        left: 0;
+
+    }
+    25% {
+        top: 25%;
+        left: 50%;
+    }
+    50% {
+        top: 50%;
+        left: 50%;
+    }
+    100% {
+        transform: rotate(360deg);
+        top: 100%;
+        left: 100%;
+    }
+}
+
+body{
+    background-image: url('./img/sparkle-rainbow.gif');
+    background-blend-mode: screen;
+    background-position: center;
+}
+
+
+.main-heading{
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+.main-heading__animation{
+    animation: spin 2s linear infinite;
+}
+
+.reasons{
+    background-color: yellow;
+    width: 25%;
+    padding: 1rem;
+    display: flex;
+
+}
+
+.meme{
+    position: relative;
+}
+
+.meme__img{
+    position: absolute;
+    left: 50%;
+    bottom:50%;
+}
+
+.easter-egg{
+
+    position: relative;
+}
+
+.easter-egg p{
+    position: absolute;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    left: 96%;
+}
+
+.agrE{
+    position: absolute;
+    animation: move 5s linear infinite;
+}
